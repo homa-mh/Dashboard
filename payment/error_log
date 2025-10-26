@@ -1,0 +1,42 @@
+[08-Sep-2025 17:01:51 Asia/Tehran] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SendMessage::sms_order(), 3 passed in /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php on line 169 and exactly 4 expected in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php:44
+Stack trace:
+#0 /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php(169): SendMessage->sms_order('09194084060', '\xD8\xAA\xD8\xB9\xD9\x85\xDB\x8C\xD8\xB1\xDA\xA9\xD8\xA7\xD8...', '1009')
+#1 {main}
+  thrown in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php on line 44
+[09-Sep-2025 12:07:08 Asia/Tehran] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SendMessage::sms_order(), 3 passed in /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php on line 169 and exactly 4 expected in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php:44
+Stack trace:
+#0 /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php(169): SendMessage->sms_order('09350666085', '\xD8\xA7\xD9\x86\xD8\xAA\xD9\x82\xD8\xA7\xD9\x84', '1010')
+#1 {main}
+  thrown in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php on line 44
+[09-Sep-2025 12:11:08 Asia/Tehran] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SendMessage::sms_order(), 3 passed in /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php on line 169 and exactly 4 expected in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php:44
+Stack trace:
+#0 /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php(169): SendMessage->sms_order('09350666085', '\xD8\xA7\xD9\x86\xD8\xAA\xD9\x82\xD8\xA7\xD9\x84', '1011')
+#1 {main}
+  thrown in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php on line 44
+[13-Sep-2025 13:05:10 Asia/Tehran] PHP Warning:  Undefined array key "amount" in /home3/jzycxfhf/public_html/hoomPlus/payment/Request.php on line 3
+[13-Sep-2025 13:05:10 Asia/Tehran] PHP Warning:  Undefined array key "info" in /home3/jzycxfhf/public_html/hoomPlus/payment/Request.php on line 4
+[13-Sep-2025 13:08:38 Asia/Tehran] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SendMessage::sms_order(), 3 passed in /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php on line 169 and exactly 4 expected in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php:44
+Stack trace:
+#0 /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php(169): SendMessage->sms_order('09127950603', '\xD8\xA7\xD9\x86\xD8\xAA\xD9\x82\xD8\xA7\xD9\x84', '1012')
+#1 {main}
+  thrown in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php on line 44
+[13-Sep-2025 13:10:36 Asia/Tehran] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SendMessage::sms_order(), 3 passed in /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php on line 169 and exactly 4 expected in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php:44
+Stack trace:
+#0 /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php(169): SendMessage->sms_order('09127950603', '\xD8\xA2\xD9\xBE\xD8\xAF\xDB\x8C\xD8\xAA', '1013')
+#1 {main}
+  thrown in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php on line 44
+[13-Sep-2025 15:22:46 Asia/Tehran] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SendMessage::sms_order(), 3 passed in /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php on line 169 and exactly 4 expected in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php:44
+Stack trace:
+#0 /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php(169): SendMessage->sms_order('09123788324', '\xD8\xA2\xD9\xBE\xD8\xAF\xDB\x8C\xD8\xAA', '1014')
+#1 {main}
+  thrown in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php on line 44
+[17-Sep-2025 18:23:40 Asia/Tehran] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SendMessage::sms_order(), 3 passed in /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php on line 171 and exactly 4 expected in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php:44
+Stack trace:
+#0 /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php(171): SendMessage->sms_order('09113212733', '\xD8\xA7\xD9\x86\xD8\xAA\xD9\x82\xD8\xA7\xD9\x84', '1015')
+#1 {main}
+  thrown in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php on line 44
+[23-Sep-2025 12:05:47 Asia/Tehran] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function SendMessage::sms_order(), 3 passed in /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php on line 171 and exactly 4 expected in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php:44
+Stack trace:
+#0 /home3/jzycxfhf/public_html/hoomPlus/payment/verify.php(171): SendMessage->sms_order('09137813498', '\xD8\xA7\xD9\x86\xD8\xAA\xD9\x82\xD8\xA7\xD9\x84', '1016')
+#1 {main}
+  thrown in /home3/jzycxfhf/public_html/hoomPlus/app/bale/SendMessage.php on line 44

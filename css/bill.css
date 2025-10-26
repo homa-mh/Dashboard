@@ -1,0 +1,80 @@
+
+form{
+    width: 100%;
+}
+input{
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="number"], select{
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #242424;
+    outline: none;
+}
+
+input[type="submit"]{
+    width: 70%;
+    margin: 40px auto;
+    background: linear-gradient(to bottom, #0c6c61, #169183);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 2em;
+}
+
+input[type="submit"]:hover{
+    cursor:pointer;
+}
+
+select{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+
+h1{
+    margin-top: 1vh;
+    margin-right:20px;
+}
+.head span{
+    transform: translateY(8px) translateX(-20px);
+}
+#billInquiry{
+    background-color: #0c6c61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 40%;
+    margin-top: 60px;
+
+}.divBillInquiryButtons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

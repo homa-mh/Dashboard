@@ -1,0 +1,38 @@
+.tabs {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid #ddd;
+}
+.tab {
+    width: 50%;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: #545454;
+    border-bottom: none;
+    margin-top: 20px;
+}
+.tab.active {
+    background: white;
+    font-weight: bold;
+    color: black;
+    border-bottom: 3px solid #0c6c61;
+}
+.content {
+    display: none;
+    padding: 20px;
+    
+}
+.content.active {
+    display: block;
+}
+
+.emptyFolder{
+    width: 100%;
+    display: block;
+    margin: auto;
+    
+    text-align: center;
+}.emptyFolder span{
+    font-size: 50px;
+}

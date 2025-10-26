@@ -1,0 +1,57 @@
+.unit{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    height: 60px;
+}
+.unit input{
+    height: 2em;
+    margin-top: 1em;
+    text-align: center;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgb(84, 84, 84);
+}
+h1{
+    margin-top: 5vh;
+    margin-right:20px;
+}
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin: 40px auto;
+    background: linear-gradient(to bottom, #0c6c61, #169183);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 2em;
+}
+select{
+    display: block;
+    margin: 10px auto 30px auto;
+    width: 80%;
+    padding: 0.75em;
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+}
+.divDate{
+    width: 100%;
+    margin: 0px auto 30px auto ;
+}
+.divDate input{
+    width: 50%;
+    height: 2em;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #0c6c61;
+}.divDate label{
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
+

@@ -1,0 +1,107 @@
+.add{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #0c6c61;
+    margin: 5px auto;
+    padding: 0px 10px;
+    border-radius: 30px;
+    color: white;
+}
+.add p{
+    display: inline;
+    padding: 0px 10px;
+}
+.buildings .building{
+    display: inline-block;
+    margin: 10px auto 0 auto;
+    width: 80%;
+    padding: 0.75em;
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+}
+
+.unit p{
+    display: inline-block;
+    font-size: small;
+    padding-right: 5px;
+    
+}
+.unit .material-icons{
+    padding-right: 10px;
+    font-size: 30px;
+}
+.unitText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.unitText div p:last-child{
+    width: 100%;
+    transform: translateY(-25px);
+}
+.unitText div p:first-child{
+    font-weight: bold;
+}
+.divTwoButton{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.divTwoButton div{
+    width: 45%;
+    height: 2em;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.buttons div{
+    display: flex;
+}.reports{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.report{
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 6px #3e3e3e;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.report p{
+    padding: 3px;
+    margin: 0px;
+}
+
+
+.addUnitLink:hover {
+    color: #000;
+}
+
+
+.addUnitLink {
+    display: flex;
+    color: #0c6c61;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.addUnitLink .material-icons {
+    font-size: 22px; 
+}

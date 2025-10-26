@@ -1,0 +1,40 @@
+.months{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}input[type="checkbox"]{
+    display: none;
+}
+Label {
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    width: 25%;
+    padding: 7px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+input[type="checkbox"]:checked + Label {
+    background: linear-gradient(to bottom, #0c6c61, #169183);
+    color: white;
+    
+}input[type="submit"]{
+    width: 70%;
+    display: block;
+    margin: 40px auto;
+    /* background: linear-gradient(to bottom, #0c6c61, #169183); */
+    background-color: #0c6c61;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 2em;
+}
+
+h1{
+    margin-right: 20px;
+}.head{
+    margin: 70px auto 30px;
+}

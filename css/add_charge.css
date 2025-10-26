@@ -1,0 +1,147 @@
+body {
+background-color: #f4f4f4;
+margin: 0;
+padding: 0;
+direction: rtl;
+text-align:right;
+}
+
+
+form {
+max-width: 600px;
+margin: 40px auto;
+background: white;
+border-radius: 12px;
+padding: 30px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2,h4 {
+margin-top: 0;
+color: #333;
+direction: rtl;
+}
+h1{
+    font-size: medium;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.months-container {
+  direction: ltr;
+}
+
+.item {
+  display: flex;
+  flex-direction: row-reverse; /* ترتیب: چک‌باکس ← متن */
+  margin-bottom: 12px;
+  font-size: 16px;
+  gap: 8px; 
+}
+
+lable{
+    direction: rtl;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+margin-left: 8px;
+}
+
+input[type="text"] {
+width: 100%;
+padding: 8px 1px;
+font-size: 15px;
+border: 1px solid #ccc;
+border-radius: 6px;
+}
+.radio-item{
+    direction:rtl;
+    text-align:right;
+}
+
+.form-step {
+display: none;
+animation: fadeIn 0.3s ease-in-out;
+}
+
+.form-step.active {
+display: block;
+direction: rtl;
+
+}
+
+.navigation {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+
+}
+
+.navigation button {
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.3s ease;
+background-color: #0c6c61;
+color: white;
+border: none;
+padding: 0.5em;
+width: 40%;
+margin-top: 20px;
+}
+
+.navigation button:hover {
+background-color: #0cAA58;
+}
+
+
+input[type="submit"] {
+margin-top: 20px;
+width: 100%;
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 12px;
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #388E3C;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+}
+
+th {
+background-color: #f0f0f0;
+color: #333;
+font-size:12px;
+}
+
+ul {
+padding-right: 20px;
+margin-top: 10px;
+}
+
+ul li {
+margin-bottom: 6px;
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
