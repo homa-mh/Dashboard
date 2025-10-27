@@ -3,11 +3,11 @@
 $amount = $_POST['amount'];
 $info = $_POST['info'] ;
 
-$data = array("merchant_id" => "b8e15a68-131c-422a-ad5b-150941835d4e",
+$data = array("merchant_id" => "xxx...",
     "amount" => $amount,
     "callback_url" => "https://hoomplus.ir/hoomPlus/payment/verify.php?info=" . $info ,
     "description" => "خرید تست",
-    "metadata" => [ "email" => "info@email.com","mobile"=>"09035612275"],
+    "metadata" => [ "email" => "info@email.com","mobile"=>"09123456789"],
     );
 $jsonData = json_encode($data);
 $ch = curl_init('https://api.zarinpal.com/pg/v4/payment/request.json');
