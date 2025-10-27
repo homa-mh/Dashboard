@@ -1,9 +1,16 @@
 <?php
 require_once 'app/session_config.php';
 
-// مرحله فعلی را از سشن بخوانیم یا مقدار پیش‌فرض را مرحله ۱ قرار دهیم
 $current_step = $_SESSION['step'] ?? 'step1';
+
+if (!empty($_SESSION['error'])) {
+    $current_step = 'step1';
+}
+elseif (!empty($_SESSION['success'])) {
+    $current_step = 'step2';
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="fa-ir">
 <head>
@@ -77,20 +84,19 @@ $current_step = $_SESSION['step'] ?? 'step1';
     </style>
 </head>
 <body dir="rtl">
+
     <div class="main">
         <img src="image/hoompluslogo.jpg" alt="hoom plus logo" id="logo" style="width:40%">
         <h2 id="heading">پنل اختصاصی مدیر ساختمان</h2>
 
-        <!-- نمایش پیام‌ها -->
         <?php if (!empty($_SESSION['error'])): ?>
             <p style="color:red;"><?php echo $_SESSION['error']; ?></p>
-            <?php unset($_SESSION['error']); ?>
         <?php endif; ?>
-
+        
         <?php if (!empty($_SESSION['success'])): ?>
             <p style="color:green;"><?php echo $_SESSION['success']; ?></p>
-            <?php unset($_SESSION['success']); ?>
         <?php endif; ?>
+
 
         <br>
         <form action="register.php" method="POST" id="loginForm"> 
@@ -99,12 +105,13 @@ $current_step = $_SESSION['step'] ?? 'step1';
             <div id="step1" class="<?= ($current_step === 'step1') ? '' : 'hidden' ?>">
                 <label>ورود با شماره تلفن مالک (admin) دستگاه</label>
                 <input type="text" name="username" id="username" placeholder="* شماره تلفن مثال: 09123456789" value="<?= htmlspecialchars($_SESSION['pre_value'] ?? '', ENT_QUOTES) ?>">
-                <br><button type="button" id="sendCodeBtn">ارسال کد</button>
+                <br>
+                <button type="submit" name="action" value="send_code">ارسال کد</button>
             </div>
 
             <!-- مرحله دوم -->
             <div id="step2" class="<?= ($current_step === 'step2') ? '' : 'hidden' ?>">
-                <br><br>
+                
                 <label id="otpLabel">
                     کد شش رقمی ارسال شده به شماره 
                     <?= htmlspecialchars($_SESSION['pre_value'] ?? '', ENT_QUOTES) ?>
@@ -197,48 +204,27 @@ $current_step = $_SESSION['step'] ?? 'step1';
                 fullOtpInput.value = otpCode;
             }
 
-            // مطمئن شو قبل submit مقدار کامل آپدیت شده
             loginForm.addEventListener("submit", function() {
                 updateOtpValue();
             });
 
-            sendCodeBtn.addEventListener("click", function() {
-                const phone = usernameInput.value.trim();
-                if (phone === "") {
-                    alert("لطفاً شماره تلفن را وارد کنید");
-                    return;
-                }
-
-                fetch("register.php", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: `action=send_code&username=${encodeURIComponent(phone)}`
-                })
-                .then(res => res.text())
-                .then(data => {
-                    console.log("Server response:", data);
-                    heading.classList.add("hidden");
-                    footer.classList.add("hidden");
-                    otpLabel.textContent = `کد شش رقمی ارسال شده به شماره ${phone}`;
-                    step1.classList.add("hidden");
-                    step2.classList.remove("hidden");
-                    otpInputs[0].focus();
-                })
-                .catch(err => {
-                    console.error("Error:", err);
-                });
-            });
+            
 
             changeNumberBtn.addEventListener("click", function() {
                 step2.classList.add("hidden");
                 step1.classList.remove("hidden");
                 heading.classList.remove("hidden");
                 footer.classList.remove("hidden");
-                // پاکسازی فیلدهای otp
+                
                 otpInputs.forEach(i => i.value = "");
                 fullOtpInput.value = "";
             });
         });
     </script>
+    <?php
+unset($_SESSION['error']);
+unset($_SESSION['success']);
+?>
+
 </body>
 </html>

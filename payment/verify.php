@@ -96,7 +96,7 @@ $msg_success = "خطا در پرداخت.";
 //   Verify with Zarinpal    //
 
 if (strtoupper($status) == "OK") {
-    $MerchantID = "b8e15a68-131c-422a-ad5b-150941835d4e";
+    $MerchantID = "xxx";
     
     $data = [
         "merchant_id" => $MerchantID,
@@ -183,7 +183,7 @@ if (strtoupper($status) == "OK") {
     $msg .= "#buy\n" . $DateTime;
     
     $bale = new SendMessage();
-    $bale->send_messagge("6441576316", $msg);
+    $bale->send_messagge("123456789", $msg);
     // ارسال پیامک به کاربر
     $bale->sms_order($phone, $req, $pay_id);
         

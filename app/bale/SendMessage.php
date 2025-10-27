@@ -3,14 +3,16 @@ declare(strict_types=1);
 
 class SendMessage{
     private $bot_token;
+    private $sms_key;
     public function __construct(){
-        $this->bot_token = "463578540:RvnPoZlFe9Nt1EXFpFgaVIkoFdcTNlLOgpOREFKt";
+        $this->bot_token = "xx...";
+        $this->sms_key = "xx...";
     }
     public function send_sms($phone, $code): bool {
         $receptor = $phone;
         $token = $code;
-        $template = "HoomPlusVerify";
-        $key = "54657A47524E695933704C54664164594C2F575559424E5968466F5957586C7675435443545241584F6E6F3D";
+        $template = "Verify";
+        $key = $this->sms_key;
         
         $url = "https://api.kavenegar.com/v1/$key/verify/lookup.json";
         $params = [
@@ -44,7 +46,7 @@ class SendMessage{
     public function sms_order($phone, $product, $code): bool {
     
         $template = "hoomPlusOrder";
-        $key = "54657A47524E695933704C54664164594C2F575559424E5968466F5957586C7675435443545241584F6E6F3D";
+        $key = $this->sms_key;
         
         $url = "https://api.kavenegar.com/v1/$key/verify/lookup.json";
         $params = [
