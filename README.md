@@ -57,4 +57,4 @@ Some features depended on external company services and may no longer be operati
 
 ## License
 
-No license has been specified for this project yet.
+No license .
